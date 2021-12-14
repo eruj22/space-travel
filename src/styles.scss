@@ -19,10 +19,29 @@ ul {
   list-style: none;
 }
 
+p {
+  line-height: 1.5;
+}
+
 .container {
   position: relative;
   margin: 0 auto;
   max-width: 1200px;
   width: 90%;
   height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.text {
+  &--red {
+    color: #702828;
+  }
 }

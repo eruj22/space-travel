@@ -8,6 +8,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { DestinationComponent } from './pages/destination/destination.component';
 import { CrewComponent } from './pages/crew/crew.component';
 import { TechnologyComponent } from './pages/technology/technology.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,15 @@ import { TechnologyComponent } from './pages/technology/technology.component';
     HomeComponent,
     DestinationComponent,
     CrewComponent,
-    TechnologyComponent
+    TechnologyComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatTabsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

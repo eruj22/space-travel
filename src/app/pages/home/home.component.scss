@@ -2,12 +2,10 @@
   background-image: url("../../../assets/home/background-home-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
 
   &__text {
-    position: absolute;
-    bottom: 7rem;
-    left: 1rem;
+    padding-top: 50vh;
     max-width: 420px;
   }
 
@@ -23,7 +21,7 @@
 
   &__cta {
     position: absolute;
-    bottom: 7rem;
+    top: 58vh;
     right: 0;
     display: flex;
     justify-content: center;
