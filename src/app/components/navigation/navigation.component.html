@@ -1,0 +1,38 @@
+<nav class="nav">
+  <div class="nav__logo">
+    <img src="../../../assets/shared/logo.svg" alt="space travel logo" />
+  </div>
+
+  <ul class="nav__links">
+    <li class="nav__link">
+      <a
+        class="nav__item"
+        routerLink="/"
+        routerLinkActive="nav--active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        ><b>00</b> Home</a
+      >
+    </li>
+    <li class="nav__link">
+      <a
+        class="nav__item"
+        routerLink="/destination"
+        routerLinkActive="nav--active"
+        ><b>01</b> Destination</a
+      >
+    </li>
+    <li class="nav__link">
+      <a class="nav__item" routerLink="/crew" routerLinkActive="nav--active"
+        ><b>02</b> Crew</a
+      >
+    </li>
+    <li class="nav__link">
+      <a
+        class="nav__item"
+        routerLink="/technology"
+        routerLinkActive="nav--active"
+        ><b>03</b> Technology</a
+      >
+    </li>
+  </ul>
+</nav>

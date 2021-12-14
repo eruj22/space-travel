@@ -1,0 +1,39 @@
+.home {
+  background-image: url("../../../assets/home/background-home-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  &__text {
+    position: absolute;
+    bottom: 7rem;
+    left: 1rem;
+    max-width: 420px;
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 7rem;
+    margin: 1.5rem 0;
+  }
+
+  &__cta {
+    position: absolute;
+    bottom: 7rem;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+}
