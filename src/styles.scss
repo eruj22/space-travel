@@ -45,3 +45,28 @@ body {
     color: #702828;
   }
 }
+
+// Custom styles for material library
+.destination {
+  .mat-tab-label-content {
+    color: #fff;
+  }
+
+  .mat-tab-labels {
+    justify-content: end;
+  }
+
+  .mat-tab-label {
+    min-width: 120px;
+  }
+
+  .mat-tab-label-active {
+    background-color: transparent;
+  }
+
+  .mat-tab-group.mat-primary .mat-ink-bar,
+  .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    background-color: #fefefe;
+    width: fit-content;
+  }
+}
