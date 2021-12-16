@@ -54,8 +54,10 @@
     }
 
     &__cta {
-      top: 65vh;
-      right: calc(50% - 125px);
+      width: 150px;
+      height: 150px;
+      top: 75vh;
+      right: calc(50% - 75px);
     }
   }
 }
@@ -78,11 +80,10 @@
       font-size: 1.1rem;
       margin-top: 3rem;
     }
+
+    &__cta {
+      top: 70vh;
+      right: calc(50% - 75px);
+    }
   }
 }
-
-// @media (max-width: 425px) {
-//   .home {
-
-//   }
-// }
