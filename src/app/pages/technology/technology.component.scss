@@ -37,3 +37,45 @@
     margin: 0.5rem 0 2rem;
   }
 }
+
+@media (max-width: 1200px) {
+  .technology {
+    background-image: url("../../../assets/technology/background-technology-tablet.jpg");
+    padding: 15vh 0 4vh;
+
+    &__flex {
+      flex-direction: column;
+    }
+
+    &__title {
+      margin-bottom: 1rem;
+    }
+
+    &__image {
+      width: 100%;
+      max-width: 500px;
+    }
+
+    &__text {
+      width: 100%;
+      max-width: 400px;
+      margin-top: 2rem;
+      padding-left: 0;
+      align-self: start;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .technology {
+    background-image: url("../../../assets/technology/background-technology-mobile.jpg");
+
+    &__title {
+      font-size: 1.6rem;
+    }
+
+    &__technologyTitle {
+      font-size: 2.4rem;
+    }
+  }
+}

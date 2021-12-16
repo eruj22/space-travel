@@ -3,13 +3,38 @@
     <img src="../../../assets/shared/logo.svg" alt="space travel logo" />
   </div>
 
-  <ul class="nav__links">
+  <div class="nav__blur"></div>
+
+  <button
+    [ngClass]="{
+      nav__burgerIcon: isMenuOpen === false,
+      hide: isMenuOpen === true
+    }"
+    (click)="openMenu()"
+  >
+    <img src="../../../assets/menu.svg" alt="" />
+  </button>
+
+  <button
+    [ngClass]="{
+      nav__closeIcon: isMenuOpen === true,
+      hide: isMenuOpen === false
+    }"
+    (click)="closeMenu()"
+  >
+    <img src="../../../assets/close.svg" alt="" />
+  </button>
+
+  <ul class="nav__links" [ngClass]="{ 'nav--open': isMenuOpen === true }">
+    <li class="nav__line"></li>
+
     <li class="nav__link">
       <a
         class="nav__item"
         routerLink="/"
         routerLinkActive="nav--active"
         [routerLinkActiveOptions]="{ exact: true }"
+        (click)="closeMenu()"
         ><b>00</b> Home</a
       >
     </li>
@@ -18,11 +43,16 @@
         class="nav__item"
         routerLink="/destination"
         routerLinkActive="nav--active"
+        (click)="closeMenu()"
         ><b>01</b> Destination</a
       >
     </li>
     <li class="nav__link">
-      <a class="nav__item" routerLink="/crew" routerLinkActive="nav--active"
+      <a
+        class="nav__item"
+        routerLink="/crew"
+        routerLinkActive="nav--active"
+        (click)="closeMenu()"
         ><b>02</b> Crew</a
       >
     </li>
@@ -31,6 +61,7 @@
         class="nav__item"
         routerLink="/technology"
         routerLinkActive="nav--active"
+        (click)="closeMenu()"
         ><b>03</b> Technology</a
       >
     </li>
